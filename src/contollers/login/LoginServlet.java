@@ -87,6 +87,7 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/login/login.jsp");
             rd.forward(request, response);
         }else{
+
             //認証できたらログイン状態に、その後トップページへリダイレクトする
             request.getSession().setAttribute("login_employee", e);
 

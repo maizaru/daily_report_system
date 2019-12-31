@@ -1,11 +1,10 @@
 package utils;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import javax.xml.bind.DatatypeConverter;
-
 public class EncryptUtil {
+
     public static String getPasswordEncrypt(String plain_p, String salt) {
         String ret = "";
 
@@ -20,4 +19,5 @@ public class EncryptUtil {
 
         return ret;
     }
+
 }
