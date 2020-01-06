@@ -46,9 +46,7 @@ public class ReportsUpdateServlet extends HttpServlet {
             r.setTitle(request.getParameter("title"));
             r.setContent(request.getParameter("content"));
 
-            //出勤時間追加
-            r.setAttendance(request.getParameter("attendance"));
-            //
+
 
             r.setUpdated_at(new Timestamp(System.currentTimeMillis()));
 

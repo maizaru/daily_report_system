@@ -61,17 +61,6 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
-    @Column(name = "attendance", nullable = false)
-    private String attendance;
-
-    public String getAttendance() {
-        return attendance;
-    }
-
-    public void setAttendance(String attendance) {
-        this.attendance = attendance;
-    }
-
     public Integer getId() {
         return id;
     }
