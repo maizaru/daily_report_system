@@ -26,5 +26,9 @@
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 
+<label for="content">出勤時間</label><br />
+<input type="time" name="attendance" value="<c:out value='${report.attendance }' />"/>
+<br /><br />
+
 <input type="hidden" name="_token" value="${_token}" />
 <button type="submit">投稿</button>
